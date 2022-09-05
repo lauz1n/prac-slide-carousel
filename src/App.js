@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Slides from "./Slides"
 
-function App() {
+const App = () => {
+  const slides = [
+    {
+      id: "slide1",
+      text: "Slide 1",
+    },
+    {
+      id: "slide2",
+      text: "Slide 2",
+    },
+    {
+      id: "slide3",
+      text: "Slide 3",
+    },
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Slides slides={slides} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
