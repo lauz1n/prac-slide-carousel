@@ -37,6 +37,15 @@ const Slides = ({ slides }) => {
         <button onClick={prevSlide}>Anterior</button>
         <button onClick={nextSlide}>Próximo</button>
       </nav>
+      <footer className={styles.footer}>
+        <a
+          href="https://samuelvdev.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          by Samuel Ventura
+        </a>
+      </footer>
     </section>
   )
 }
